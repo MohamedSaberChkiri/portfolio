@@ -3,13 +3,10 @@ import HomeRight from "./HomeRight";
 
 function Home() {
   return (
-    <div className="flex items-center justify-around">
-      <div>
-        <HomeLeft />
-      </div>
-      <div>
-        <HomeRight />
-      </div>
+    <div className="flex items-center justify-around w-full">
+      <HomeLeft />
+
+      <HomeRight />
     </div>
   );
 }

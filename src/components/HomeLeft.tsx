@@ -1,13 +1,15 @@
+import TextSwap from "./HomeTextSwap";
+
 function HomeLeft() {
   return (
-    <div>
-      <div className="inline-block">
-        <p className=" border-r-2 border-white w-full whitespace-nowrap overflow-hidden animate-customBorderColor">
-          Hello, i'm Mohamed.
-        </p>
+    <div className="flex flex-col items-start justify-center  h-[70vh] w-[50%]">
+      <div className="inline-block ">
+        <TextSwap />
       </div>
       <p></p>
-      <button>Download CV</button>
+      <button className="border border-white px-6 py-4 rounded-2xl text-white">
+        Download CV
+      </button>
     </div>
   );
 }

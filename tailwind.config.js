@@ -9,7 +9,8 @@ export default {
       keyframes: {
         customBorderColor: {
           "0%": { borderColor: "white", width: "0%" },
-          "50%": { borderColor: "transparent", width: "50%" },
+          "45%": { borderColor: "transparent", width: "50%" },
+          "80%": { borderColor: "white", width: "100%" },
           "100%": { borderColor: "white", width: "100%" },
         },
         typing: {
@@ -18,7 +19,7 @@ export default {
       },
       animation: {
         customBorderColor:
-          "customBorderColor 2s ease-in-out infinite alternate",
+          "customBorderColor 3s ease-in-out infinite alternate",
       },
     },
   },

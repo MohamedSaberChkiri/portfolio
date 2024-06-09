@@ -1,0 +1,12 @@
+:root {
+  --black-color: #232323;
+  --purple-color: #b056ff;
+  --white-color: #f6ecff;
+}
+
+body {
+  background-color: var(--black-color);
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}

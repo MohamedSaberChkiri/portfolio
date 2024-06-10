@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        anonymousPro: ["Anonymous Pro", "monospace"],
+        anonymousPro: ["Averia Serif Libre", "serif"],
       },
       keyframes: {
         customBorderColor: {

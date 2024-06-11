@@ -8,12 +8,12 @@ import {
   VisionControl,
 } from "../data/skills";
 import Skilles from "./Skill";
+import TitleView from "./TitleView";
 
 function Skills() {
   return (
     <div className="flex items-center gap-16 justify-center flex-col w-[700px] mx-auto  mt-[20vh] ">
-
-      <p className="text-[color:var(--white-color)] w-full text-3xl">Skills</p>
+      <TitleView title="Skils" />
       <Skilles
         stack={Languages}
         openTag="<Languagues>"
@@ -24,33 +24,33 @@ function Skills() {
         openTag="<Frameworks>"
         closeTag="</Frameworks>"
       />
-    <div className="flex items-center justify-center gap-[15vw] flex-wrap">
-      <Skilles
-        stack={Databases}
-        openTag="<Databases>"
-        closeTag="</Databases>"
-      />
+      <div className="flex items-center justify-center gap-[15vw] flex-wrap">
+        <Skilles
+          stack={Databases}
+          openTag="<Databases>"
+          closeTag="</Databases>"
+        />
 
-      <Skilles
-        stack={VisionControl}
-        openTag="<VisionControl>"
-        closeTag="</VisionControl>"
-      />
-</div>
+        <Skilles
+          stack={VisionControl}
+          openTag="<VisionControl>"
+          closeTag="</VisionControl>"
+        />
+      </div>
 
-<div className="flex items-center justify-center gap-32 flex-wrap">
-      <Skilles
-        stack={PackageManagers}
-        openTag="<PkgManagers>"
-        closeTag="</PkgManagers>"
-      />
+      <div className="flex items-center justify-center gap-32 flex-wrap">
+        <Skilles
+          stack={PackageManagers}
+          openTag="<PkgManagers>"
+          closeTag="</PkgManagers>"
+        />
 
-      <Skilles stack={APIs} openTag="<APIs>" closeTag="</APIs>" />
-      <Skilles
-        stack={RuntimeEnvironments}
-        openTag="<RuntimeEnv>"
-        closeTag="</RuntimeEnv>"
-      />
+        <Skilles stack={APIs} openTag="<APIs>" closeTag="</APIs>" />
+        <Skilles
+          stack={RuntimeEnvironments}
+          openTag="<RuntimeEnv>"
+          closeTag="</RuntimeEnv>"
+        />
       </div>
     </div>
   );

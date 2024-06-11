@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         anonymousPro: ["Averia Serif Libre", "serif"],
+        anton: ["Anton", "sans-serif"],
       },
       keyframes: {
         customBorderColor: {

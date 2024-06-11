@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <div className="flex items-center justify-around h-[10vh] w-full text-[color:var(--white-color)]">
-      <div className="cursor-pointer text-4xl text-[color:var(--orange-color)]">
+      <div className="cursor-pointer text-4xl text-[color:var(--orange-color)] ">
         {"<Mohamed/>"}
       </div>
 

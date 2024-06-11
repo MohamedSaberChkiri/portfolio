@@ -1,7 +1,7 @@
 const TextSwap = () => {
   return (
     <>
-      <h1 className="text-white text-5xl border-r-2">HELLO, IM MOHAMED</h1>
+      <h1 className="border-[color:var(--orange-color)] text-[color:var(--orange-color)]  border-r-2">Web Developer</h1>
     </>
   );
 };

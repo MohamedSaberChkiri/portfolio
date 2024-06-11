@@ -1,7 +1,9 @@
+import TitleView from "./TitleView";
+
 function AboutMe() {
   return (
     <div className="flex-col gap-[3vh] text-[color:var(--white-color)] my-[50px] w-[700px] mx-auto">
-      <h1 className="text-3xl">About Me</h1>
+      <TitleView title="About Me" />
       <span className="text-[color:var(--orange-color)] ml-[3vw] flex my-5">
         {"<About>"}
       </span>

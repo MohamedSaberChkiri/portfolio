@@ -11,13 +11,14 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { FaGithub, FaNpm } from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
 import { IoIosSettings } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   SiAxios,
   SiExpress,
-  SiMysql,
+ 
   SiNextdotjs,
   SiTypescript,
 } from "react-icons/si";
@@ -100,7 +101,7 @@ export const Databases: Skill[] = [
   {
     name: "MySQL",
     level: "Good",
-    icon: SiMysql,
+    icon: GrMysql,
   },
 ];
 

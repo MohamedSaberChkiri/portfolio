@@ -3,11 +3,11 @@ import TextSwap from "./HomeTextSwap";
 function HomeLeft() {
   return (
     <div className="flex flex-col items-start gap-6 justify-center h-[70vh] w-[50%]">
-      <div className="inline-block ">
-        <TextSwap />
+      <div className="text-[color:var(--white-color)] text-5xl">
+        MOHAMED SABER CHKIRI
       </div>
-      <h1 className="text-4xl text-[color:var(--orange-color)]">
-        Web Developer
+      <h1 className="text-3xl text-[color:var(--white-color)] gap-4 flex">
+        I'm a <TextSwap />
       </h1>
       <p className="text-white w-[600px] ">
         Welcome to my portfolio! Explore projects where clean design meets

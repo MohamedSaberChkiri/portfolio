@@ -4,7 +4,7 @@ function AboutMe() {
   return (
     <div className="flex-col gap-[3vh] text-[color:var(--white-color)] my-[50px] w-[700px] mx-auto">
       <TitleView title="About Me" />
-      <span className="text-[color:var(--orange-color)] ml-[3vw] flex my-5">
+      <span className="text-[color:var(--orange-color)] ml-[3vw] flex mt-[15vh]">
         {"<About>"}
       </span>
       <p className="ml-[5vw]">

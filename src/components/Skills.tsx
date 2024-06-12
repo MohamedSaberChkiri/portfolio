@@ -13,7 +13,7 @@ import TitleView from "./TitleView";
 function Skills() {
   return (
     <div className="flex items-center gap-16 justify-center flex-col w-[700px] mx-auto  mt-[20vh] ">
-      <TitleView title="Skils" />
+      <TitleView title="Skills" />
       <Skilles
         stack={Languages}
         openTag="<Languagues>"

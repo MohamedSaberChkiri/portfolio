@@ -11,3 +11,8 @@ body {
   font-style: normal;
   cursor: none;
 }
+
+.homeright {
+
+    background: url(./assets/website-creator-animate.svg);
+}

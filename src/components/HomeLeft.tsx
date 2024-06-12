@@ -2,7 +2,7 @@ import TextSwap from "./HomeTextSwap";
 
 function HomeLeft() {
   return (
-    <div className="flex flex-col items-start gap-6 justify-center h-[70vh] w-[50%]">
+    <div className="flex flex-col items-start gap-6 justify-center h-[70vh]">
       <div className="text-[color:var(--white-color)] text-5xl">
         MOHAMED SABER CHKIRI
       </div>

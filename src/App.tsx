@@ -13,11 +13,20 @@ function App() {
     <>
       <CustomCursor />
       <Navbar />
+
       <Home />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contact />
+      <section id="about">
+        <AboutMe />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </>
   );

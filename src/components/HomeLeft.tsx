@@ -3,7 +3,7 @@ import TextSwap from "./HomeTextSwap";
 function HomeLeft() {
   return (
     <div className="flex flex-col items-start gap-6 justify-center h-[70vh]">
-      <div className="text-[color:var(--white-color)] text-5xl">
+      <div className="text-[color:var(--white-color)] text-5xl cursor-none">
         MOHAMED SABER CHKIRI
       </div>
       <h1 className="text-3xl text-[color:var(--white-color)] gap-4 flex">
@@ -14,7 +14,7 @@ function HomeLeft() {
         powerful code, showcasing my ability to create responsive, user-friendly
         web experiences.
       </p>
-      <button className="border border-[color:var(--orange-color)] px-6 py-4 rounded-2xl text-[color:var(--orange-color)]">
+      <button className="cursor-none border border-[color:var(--orange-color)] px-6 py-4 rounded-2xl text-[color:var(--orange-color)]">
         Download CV
       </button>
     </div>

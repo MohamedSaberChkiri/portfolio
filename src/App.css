@@ -13,6 +13,19 @@ body {
 }
 
 .homeright {
+  background: url(./assets/website-creator-animate.svg);
+}
 
-    background: url(./assets/website-creator-animate.svg);
+.blink {
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--orange-color);
+  }
 }

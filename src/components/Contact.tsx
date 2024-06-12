@@ -2,9 +2,12 @@ import TitleView from "./TitleView";
 
 function Contact() {
   return (
-    <div>
+    <div className="w-fit mx-auto">
       <TitleView title="Contact" />
-      <form className="flex flex-col w-fit my-[5vh] mx-auto">
+      <span className="text-[color:var(--orange-color)] flex mt-[10vh]">
+        {"<Contact>"}
+      </span>
+      <form className="flex flex-col my-[3vh]">
         <input
           className="bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           type="text"
@@ -34,6 +37,10 @@ function Contact() {
           className="bg-[color:var(--orange-color)] text-[color:var(--black-color)] cursor-pointer py-2 px-4 rounded-lg mt-2"
         ></input>
       </form>
+      <span className="text-[color:var(--orange-color)] flex w-full items-center justify-end">
+        {" "}
+        {"</Contact>"}{" "}
+      </span>
     </div>
   );
 }

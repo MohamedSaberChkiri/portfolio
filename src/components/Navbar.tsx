@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import CustomizedSwitch from "./DarkLightSwitch";
 
 function Navbar() {
   return (
@@ -45,14 +46,18 @@ function Navbar() {
         </Link>
       </ul>
 
-      <Link
-        to="contact"
-        smooth={true}
-        duration={500}
-        className="border-2 px-4 py-2 text-[12px] text-[color:var(--orange-color)] rounded-xl border-[color:var(--orange-color)]"
-      >
-        {"<Get in Touch/>"}
-      </Link>
+      <div className="flex items-center justify-center gap-4">
+        <CustomizedSwitch />
+
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          className="border-2 px-4 py-2 text-[12px] text-[color:var(--orange-color)] rounded-xl border-[color:var(--orange-color)]"
+        >
+          {"<Get in Touch/>"}
+        </Link>
+      </div>
     </div>
   );
 }

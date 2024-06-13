@@ -7,20 +7,14 @@ export default {
         anonymousPro: ["Averia Serif Libre", "serif"],
         anton: ["Anton", "sans-serif"],
       },
-      keyframes: {
-        customBorderColor: {
-          "0%": { borderColor: "white", width: "0%" },
-          "45%": { borderColor: "transparent", width: "50%" },
-          "80%": { borderColor: "white", width: "100%" },
-          "100%": { borderColor: "white", width: "100%" },
-        },
-        typing: {
-          from: { width: 0 },
-        },
+      transitionProperty: {
+        transform: "transform",
       },
-      animation: {
-        customBorderColor:
-          "customBorderColor 3s ease-in-out infinite alternate",
+      transitionDuration: {
+        300: "300ms",
+      },
+      transitionTimingFunction: {
+        "in-out": "ease-in-out",
       },
     },
   },

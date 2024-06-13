@@ -1,19 +1,38 @@
-import { useState } from "react";
+import {  useState } from "react";
+import { FaMoon } from "react-icons/fa";
+import { MdOutlineWbSunny } from "react-icons/md";
+
 
 function DarkLightSwitch() {
-  const [position, setPosition] = useState("justify-start");
+  const [isLight, setIsLight] = useState(false);
+
   const handleThemeChange = () => {
-    setPosition((prevPosition) =>
-      prevPosition === "justify-start" ? "justify-end" : "justify-start"
+    setIsLight(!isLight);
+
+    document.documentElement.style.setProperty(
+      '--black-color',
+      isLight ? '#0e0e0e' : '#f6ecff'
     );
+    document.documentElement.style.setProperty(
+      '--white-color',
+      isLight ? '#f6ecff' : '#0e0e0e'
+    );
+
+
+
+
   };
 
   return (
     <div
-      className={`w-[50px] h-[20px] bg-transparent border border-white transition-transform duration-300 ease-in-out rounded-3xl flex items-center ${position}`}
+      className={`relative w-[50px] h-[20px] bg-transparent flex items-center justify-center border rounded-3xl cursor-pointer ${isLight ? 'border-[color:var(--orange-color)]' : 'border-[color:var(--white-color)]'}`}
       onClick={handleThemeChange}
     >
-      <div className="h-[25px] w-[25px] rounded-[50%] bg-white"></div>
+      <div
+        className={`absolute w-[25px] h-[25px] rounded-full text-black flex items-center justify-center transition-all duration-300 ease-in-out ${isLight ? 'left-0 bg-[color:var(--orange-color)] ' : 'left-[25px] bg-[color:var(--white-color)]'}`}
+      >
+        {isLight ? <MdOutlineWbSunny color="white"/> : <FaMoon />}
+      </div>
     </div>
   );
 }

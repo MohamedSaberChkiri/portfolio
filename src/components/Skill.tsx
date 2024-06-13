@@ -18,7 +18,7 @@ function Skilles(props: {
               key={skill.name}
               className="text-[color:var(--white-color)] w-[90px] h-[90px] gap-2 rounded border border-white flex items-center justify-center flex-col relative"
             >
-              <div className="absolute text-[color:var(--black-color)] w-[90px] h-[90px] bg-[color:var(--white-color)] opacity-0 hover:opacity-85 duration-200 rounded flex items-center justify-center">
+              <div className="absolute text-white w-[90px] h-[90px] bg-[color:var(--orange-color)] opacity-0 hover:opacity-85 duration-200 rounded flex items-center justify-center">
                 {skill.level}
               </div>
               <skill.icon size={30} />

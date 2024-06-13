@@ -12,25 +12,32 @@ import TitleView from "./TitleView";
 
 function Skills() {
   return (
-    <div className="flex items-center gap-16 justify-center flex-col w-[700px] mx-auto  mt-[20vh] ">
+    <div className="flex items-center gap-16 justify-center flex-col w-full  mt-[40vh] ">
       <TitleView title="Skills" />
-      <Skilles
+
+      <div className="flex items-center justify-center gap-[15vw] flex-wrap">
+
+ <Skilles
         stack={Languages}
         openTag="<Languagues>"
         closeTag="</Languages>"
       />
-      <Skilles
-        stack={FrameWorks}
-        openTag="<Frameworks>"
-        closeTag="</Frameworks>"
-      />
-      <div className="flex items-center justify-center gap-[15vw] flex-wrap">
-        <Skilles
+
+  <Skilles
           stack={Databases}
           openTag="<Databases>"
           closeTag="</Databases>"
         />
-
+      </div>
+     
+  
+      <div className="flex items-center justify-center gap-[15vw] flex-wrap">
+      
+    <Skilles
+        stack={FrameWorks}
+        openTag="<Frameworks>"
+        closeTag="</Frameworks>"
+      />
         <Skilles
           stack={VisionControl}
           openTag="<VisionControl>"

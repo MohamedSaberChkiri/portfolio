@@ -9,7 +9,7 @@ function HomeLeft() {
       <h1 className="text-3xl text-[color:var(--white-color)] gap-4 flex">
         I'm a <TextSwap />
       </h1>
-      <p className="text-white w-[600px] ">
+      <p className="text-[color:var(--white-color)] w-[600px] ">
         Welcome to my portfolio! Explore projects where clean design meets
         powerful code, showcasing my ability to create responsive, user-friendly
         web experiences.

@@ -2,7 +2,7 @@ import { FaHeart, FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="text-[color:var(--white-color)] text-sm flex items-center justify-around w-full mt-[10vh] h-[10vh] ">
+    <div className="text-[color:var(--white-color)] text-sm flex items-center justify-around flex-wrap gap-2 w-full mt-[10vh] h-[10vh] ">
       <p className="flex items-center justify-center gap-2 opacity-70">
         Built with <FaHeart className="text-[--orange-color]" /> by Mohamed
         Saber Chkiri

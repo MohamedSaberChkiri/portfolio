@@ -33,8 +33,8 @@ const CustomCursor = () => {
 
   return (
     <>
-      <div className=" z-50 cursor-point w-[5px] h-[5px] bg-[color:var(--white-color)] rounded-full pointer-events-none fixed top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-200"></div>
-      <div className=" z-50 cursor-outline w-[30px] h-[30px] border border-[color:var(--white-color)] rounded-full pointer-events-none fixed top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-200"></div>
+      <div className=" z-[9999] cursor-point w-[5px] h-[5px] bg-[color:var(--white-color)] rounded-full pointer-events-none fixed top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-200"></div>
+      <div className=" z-[9999] cursor-outline w-[30px] h-[30px] border border-[color:var(--white-color)] rounded-full pointer-events-none fixed top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-200"></div>
     </>
   );
 };

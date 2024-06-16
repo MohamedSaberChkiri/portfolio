@@ -7,7 +7,7 @@ function Contact() {
       <span className="text-[color:var(--orange-color)] flex mt-[10vh]">
         {"<Contact>"}
       </span>
-      <form className="flex flex-col my-[3vh]">
+      <form className="flex flex-col my-[3vh] ">
         <input
           className="bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           type="text"
@@ -27,7 +27,7 @@ function Contact() {
           placeholder="Subject"
         ></input>
         <textarea
-          className="w-[500px] h-[200px] bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color) text-[color:var(--white-color)]"
+          className="w-[250px] sm:w-[500px] h-[200px] bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color) text-[color:var(--white-color)]"
           name="message"
           placeholder="Message"
         ></textarea>

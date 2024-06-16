@@ -1,7 +1,7 @@
 function TitleView(props: { title: string }) {
   return (
     <div className=" h-[10vh] relative flex z-2 items-center justify-center">
-      <p className="text-8xl font-anton opacity-50 text-[color:var(--white-color)]">
+      <p className="text-6xl md:text-8xl font-anton opacity-10 text-[color:var(--white-color)]">
         {" "}
         {props.title}
       </p>

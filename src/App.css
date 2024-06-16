@@ -1,6 +1,6 @@
 :root {
   --black-color: #0e0e0e;
-  --orange-color: #F87B0E;
+  --orange-color: #f87b0e;
   --white-color: #f6ecff;
 }
 
@@ -16,11 +16,20 @@ body {
 
 .rightHome {
   background: url(./assets/svg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 .blink {
   animation: blink-cursor 0.75s step-end infinite;
+}
+
+.navbar-scrolled.scrolled {
+  background-color: var(--black-color);
+  box-shadow: 0 0 10px var(--orange-color);
+  transition: 0.5s ease-in-out;
+
+  height: 7vh;
 }
 
 @keyframes blink-cursor {

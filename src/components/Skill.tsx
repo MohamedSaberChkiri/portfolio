@@ -8,11 +8,11 @@ function Skilles(props: {
 }) {
   return (
     <>
-      <div className="flex-col items-start justify-center w-fit">
-        <span className="text-[color:var(--orange-color)] mb-[3vh] text-sm flex">
+      <div className="flex-col items-start justify-center w-fit px-2">
+        <span className="text-[color:var(--orange-color)]  text-sm flex">
           {props.openTag}
         </span>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center flex-wrap justify-center gap-5">
           {props.stack.map((skill) => (
             <div
               key={skill.name}
@@ -26,10 +26,9 @@ function Skilles(props: {
             </div>
           ))}
         </div>
-        <span className="text-[color:var(--orange-color)] flex mt-[3vh] text-sm float-end">
+        <span className="text-[color:var(--orange-color)] flex  text-sm float-end">
           {props.closeTag}
         </span>
-        
       </div>
     </>
   );

@@ -32,11 +32,9 @@ body {
 
   height: 7vh;
 }
-.project-card {
-  box-shadow: var(--project-card-shadow-dark) 0px 8px 24px;
-}
+
 .project-hover {
-  background: linear-gradient(to top, rgba(219, 102, 35, 0.9) 50%, transparent);
+  background: rgba(219, 102, 35, 0.8);
 }
 
 @keyframes blink-cursor {

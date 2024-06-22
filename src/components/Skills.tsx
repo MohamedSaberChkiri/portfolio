@@ -7,7 +7,7 @@ import {
   RuntimeEnvironments,
   VisionControl,
 } from "../data/skills";
-import Skilles from "./Skill";
+import CircularProgressBar from "./CircleSkill";
 import TitleView from "./TitleView";
 
 function Skills() {
@@ -16,45 +16,53 @@ function Skills() {
       <TitleView title="Skills" />
 
       <div className="flex items-center justify-center gap-[15vw] flex-wrap">
+        <CircularProgressBar
+          percentage={75}
+          skills={Languages}
+          openTag="<Languages>"
+          closeTag="</Languages>"
+        />
 
- <Skilles
-        stack={Languages}
-        openTag="<Languagues>"
-        closeTag="</Languages>"
-      />
-
-  <Skilles
-          stack={Databases}
+        <CircularProgressBar
+          percentage={75}
+          skills={Databases}
           openTag="<Databases>"
           closeTag="</Databases>"
         />
       </div>
-     
-  
+
       <div className="flex items-center justify-center gap-[15vw] flex-wrap">
-      
-    <Skilles
-        stack={FrameWorks}
-        openTag="<Frameworks>"
-        closeTag="</Frameworks>"
-      />
-        <Skilles
-          stack={VisionControl}
+        <CircularProgressBar
+          percentage={75}
+          skills={FrameWorks}
+          openTag="<Frameworks>"
+          closeTag="</Frameworks>"
+        />
+        <CircularProgressBar
+          percentage={75}
+          skills={VisionControl}
           openTag="<VisionControl>"
           closeTag="</VisionControl>"
         />
       </div>
 
       <div className="flex items-center justify-center gap-32 flex-wrap">
-        <Skilles
-          stack={PackageManagers}
+        <CircularProgressBar
+          percentage={75}
+          skills={PackageManagers}
           openTag="<PkgManagers>"
           closeTag="</PkgManagers>"
         />
 
-        <Skilles stack={APIs} openTag="<APIs>" closeTag="</APIs>" />
-        <Skilles
-          stack={RuntimeEnvironments}
+        <CircularProgressBar
+          skills={APIs}
+          openTag="<APIs>"
+          closeTag="</APIs>"
+          percentage={75}
+        />
+        <CircularProgressBar
+          percentage={75}
+          skills={RuntimeEnvironments}
           openTag="<RuntimeEnv>"
           closeTag="</RuntimeEnv>"
         />

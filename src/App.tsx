@@ -15,8 +15,10 @@ function App() {
       <div className="fixed bottom-[10vh] z-[9999] right-[5vw]">
         <HomeRightSocials />
       </div>
+      <div className="hidden lg:flex">
+        <CustomCursor />
+      </div>
 
-      <CustomCursor />
       <Navbar />
       <section id="home">
         <Home />

@@ -10,21 +10,21 @@ function HomeRightSocials() {
         href="https://github.com/MohamedSaberChkiri"
         target="_blank"
       >
-        <ImGithub size={18} />
+        <ImGithub className="text-[18px] md:text-[30px]" />
       </a>
       <a
         className="text-[color:var(--white-color)]"
         href="https://www.linkedin.com/in/saberchkiri/"
         target="_blank"
       >
-        <FaLinkedin size={18} />
+        <FaLinkedin className="text-[18px] md:text-[30px]" />
       </a>
       <a
         className="text-[color:var(--white-color)]"
         href="https://www.hackerrank.com/certificates/97fa17ea8955"
         target="_blank"
       >
-        <FaHackerrank size={18} />
+        <FaHackerrank className="text-[18px] md:text-[30px]" />
       </a>
     </div>
   );

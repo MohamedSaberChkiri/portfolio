@@ -27,13 +27,13 @@ function AboutMe() {
         </p>
         <p>
           Let's connect and build something amazing together! Reach out to me at
-          <span className="text-[color:var(--orange-color)]">
+          <span className="text-[color:var(--orange-color)] mx-2">
             mohamed@saber.dev
-          </span>{" "}
-          or find me on{" "}
+          </span>
+          or find me on
           <a
             href="https://www.linkedin.com/in/saberchkiri"
-            className="text-[color:var(--orange-color)]"
+            className="text-[color:var(--orange-color)] mx-2"
           >
             LinkedIn
           </a>

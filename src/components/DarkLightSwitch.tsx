@@ -3,7 +3,7 @@ import { FaMoon } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
 
 function DarkLightSwitch() {
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(true);
 
   const handleThemeChange = () => {
     setIsLight(!isLight);
@@ -30,7 +30,7 @@ function DarkLightSwitch() {
       <div
         className={`absolute w-[25px] h-[25px] rounded-full text-black flex items-center justify-center transition-all duration-300 ease-in-out ${
           isLight
-            ? "left-0 bg-[color:var(--orange-color)] "
+            ? "left-[-3px] bg-[color:var(--orange-color)] "
             : "left-[25px] bg-[color:var(--white-color)]"
         }`}
       >

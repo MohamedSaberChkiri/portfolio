@@ -17,14 +17,12 @@ function Skills() {
 
       <div className="flex items-center justify-center gap-[15vw] flex-wrap">
         <CircularProgressBar
-          percentage={75}
           skills={Languages}
           openTag="<Languages>"
           closeTag="</Languages>"
         />
 
         <CircularProgressBar
-          percentage={75}
           skills={Databases}
           openTag="<Databases>"
           closeTag="</Databases>"
@@ -33,13 +31,11 @@ function Skills() {
 
       <div className="flex items-center justify-center gap-[15vw] flex-wrap">
         <CircularProgressBar
-          percentage={75}
           skills={FrameWorks}
           openTag="<Frameworks>"
           closeTag="</Frameworks>"
         />
         <CircularProgressBar
-          percentage={75}
           skills={VisionControl}
           openTag="<VisionControl>"
           closeTag="</VisionControl>"
@@ -48,7 +44,6 @@ function Skills() {
 
       <div className="flex items-center justify-center gap-32 flex-wrap">
         <CircularProgressBar
-          percentage={75}
           skills={PackageManagers}
           openTag="<PkgManagers>"
           closeTag="</PkgManagers>"
@@ -58,10 +53,8 @@ function Skills() {
           skills={APIs}
           openTag="<APIs>"
           closeTag="</APIs>"
-          percentage={75}
         />
         <CircularProgressBar
-          percentage={75}
           skills={RuntimeEnvironments}
           openTag="<RuntimeEnv>"
           closeTag="</RuntimeEnv>"

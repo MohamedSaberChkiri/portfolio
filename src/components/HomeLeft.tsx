@@ -14,7 +14,10 @@ function HomeLeft() {
           "I'm a web developer who loves making the web a more awesome place. I write code that works, most of the time, and designs that always impress. Explore my portfolio and let's create something incredible together!"
         }
       </p>
-      <button className="cursor-none border border-[color:var(--orange-color)] px-6 py-4 rounded-2xl text-[color:var(--orange-color)]">
+      <button
+        className="button-86 text-[color:var(--black-color)]"
+        role="button"
+      >
         Download CV
       </button>
     </div>

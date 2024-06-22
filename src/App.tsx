@@ -1,4 +1,5 @@
 import "./App.css";
+import "./components/CompStyles/homeButton.css";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import CustomCursor from "./components/CustomCursor";
@@ -12,7 +13,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <>
-      <div className="fixed bottom-[10vh] z-[9999] right-[5vw]">
+      <div className="fixed bottom-[10vh] z-[9999] right-[5vw] md:right-[3vw]">
         <HomeRightSocials />
       </div>
       <div className="hidden lg:flex">

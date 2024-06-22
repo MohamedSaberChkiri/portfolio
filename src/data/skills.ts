@@ -15,18 +15,12 @@ import { GrMysql } from "react-icons/gr";
 import { IoIosSettings } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import {
-  SiAxios,
-  SiExpress,
- 
-  SiNextdotjs,
-  SiTypescript,
-} from "react-icons/si";
+import { SiAxios, SiExpress, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 // Define the Skill interface
 export interface Skill {
   name: string;
-  level: "Advanced" | "Good" | "Beginner";
+  level: number;
   icon: IconType;
 }
 
@@ -34,32 +28,32 @@ export interface Skill {
 export const Languages: Skill[] = [
   {
     name: "HTML",
-    level: "Advanced",
+    level: 99,
     icon: FaHtml5,
   },
   {
     name: "CSS",
-    level: "Advanced",
+    level: 99,
     icon: FaCss3Alt,
   },
   {
     name: "JavaScript",
-    level: "Advanced",
+    level: 95,
     icon: IoLogoJavascript,
   },
   {
     name: "Typescript",
-    level: "Advanced",
+    level: 94,
     icon: SiTypescript,
   },
   {
     name: "Python",
-    level: "Advanced",
+    level: 80,
     icon: FaPython,
   },
   {
     name: "Php",
-    level: "Beginner",
+    level: 45,
     icon: FaPhp,
   },
 ];
@@ -67,27 +61,27 @@ export const Languages: Skill[] = [
 export const FrameWorks: Skill[] = [
   {
     name: "React",
-    level: "Advanced",
+    level: 92,
     icon: FaReact,
   },
   {
     name: "Next.js",
-    level: "Advanced",
+    level: 90,
     icon: SiNextdotjs,
   },
   {
     name: "Vue.js",
-    level: "Beginner",
+    level: 30,
     icon: FaVuejs,
   },
   {
     name: "Express.js",
-    level: "Good",
+    level: 70,
     icon: SiExpress,
   },
   {
     name: "Tainwind CSS",
-    level: "Advanced",
+    level: 97,
     icon: RiTailwindCssFill,
   },
 ];
@@ -95,12 +89,12 @@ export const FrameWorks: Skill[] = [
 export const Databases: Skill[] = [
   {
     name: "MongoDB",
-    level: "Good",
+    level: 96,
     icon: BiLogoMongodb,
   },
   {
     name: "MySQL",
-    level: "Good",
+    level: 75,
     icon: GrMysql,
   },
 ];
@@ -108,12 +102,12 @@ export const Databases: Skill[] = [
 export const VisionControl: Skill[] = [
   {
     name: "Git",
-    level: "Advanced",
+    level: 94,
     icon: FaGitAlt,
   },
   {
     name: "Github",
-    level: "Advanced",
+    level: 94,
     icon: FaGithub,
   },
 ];
@@ -121,7 +115,7 @@ export const VisionControl: Skill[] = [
 export const PackageManagers: Skill[] = [
   {
     name: "NPM",
-    level: "Advanced",
+    level: 99,
     icon: FaNpm,
   },
 ];
@@ -129,12 +123,12 @@ export const PackageManagers: Skill[] = [
 export const APIs: Skill[] = [
   {
     name: "RESTful API",
-    level: "Advanced",
+    level: 95,
     icon: IoIosSettings,
   },
   {
     name: "Axios",
-    level: "Advanced",
+    level: 95,
     icon: SiAxios,
   },
 ];
@@ -142,7 +136,7 @@ export const APIs: Skill[] = [
 export const RuntimeEnvironments: Skill[] = [
   {
     name: "Node.js",
-    level: "Advanced",
+    level: 93,
     icon: FaNodeJs,
   },
 ];

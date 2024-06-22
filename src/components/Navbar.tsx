@@ -81,14 +81,8 @@ function Navbar() {
       <div className="flex items-center justify-center gap-4">
         <CustomizedSwitch />
 
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          className="hidden md:flex border-2 font-bold px-4 py-2 text-[12px] text-[color:var(--orange-color)] rounded-xl border-[color:var(--orange-color)]"
-          offset={-110}
-        >
-          {"<Get in Touch/>"}
+        <Link to="contact" smooth={true} duration={500} offset={-110}>
+          <button className="btn">{"<Get in Touch/>"}</button>
         </Link>
         <div className="flex md:hidden">
           <Drawer />

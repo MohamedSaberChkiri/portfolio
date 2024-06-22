@@ -1,7 +1,8 @@
 :root {
-  --black-color: #0e0e0e;
+  --black-color: #f6ecff;
   --orange-color: #f87b0e;
-  --white-color: #f6ecff;
+  --white-color: #0e0e0e;
+  --project-card-shadow-dark: rgba(149, 157, 165, 0.2);
 }
 
 body {
@@ -26,10 +27,16 @@ body {
 
 .navbar-scrolled.scrolled {
   background-color: var(--black-color);
-  box-shadow: 0 0 10px var(--orange-color);
+  box-shadow: 0 0 1px var(--white-color);
   transition: 0.5s ease-in-out;
 
   height: 7vh;
+}
+.project-card {
+  box-shadow: var(--project-card-shadow-dark) 0px 8px 24px;
+}
+.project-hover {
+  background: linear-gradient(to top, rgba(219, 102, 35, 0.9) 50%, transparent);
 }
 
 @keyframes blink-cursor {

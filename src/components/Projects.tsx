@@ -10,7 +10,7 @@ function Projects() {
       <span className="text-[color:var(--orange-color)] flex mt-[10vh]">
         {"<Projects>"}
       </span>
-      <div className="flex  items-center justify-center  gap-5 flex-wrap">
+      <div className="flex  items-start justify-center  gap-5 flex-wrap">
         <Project
           TechnologiesUsed={FirstProjectTechnos}
           ProjectName="FootWear"

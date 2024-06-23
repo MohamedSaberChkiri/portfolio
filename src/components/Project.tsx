@@ -21,7 +21,7 @@ function Project(props: {
         <p className="w-full text-white mb-6 opacity-50 text-sm">
           {props.date}
         </p>
-        <ProjectTechView />
+        <ProjectTechView techs={props.TechnologiesUsed}/>
 
         <p className="mt-[3vh] text-[15px] text-white">{props.description}</p>
         <div className="mt-[2vh] flex items-center justify-around w-full">

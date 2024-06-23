@@ -1,6 +1,6 @@
 .transition-width {
   width: 100%;
-  justify-content: space-between;
+  height: 200px;
   animation: width-transition 0.5s ease-in-out;
 }
 .transition-close {
@@ -8,20 +8,84 @@
   justify-content: start;
   animation: width-close 0.5s ease-in-out;
 }
+.arrowslide {
+ margin-left: 200px;
+  animation: arrowSlide 0.5s ease-in-out;
+
+}
+.arrowslideback {
+  margin-left: 0;
+  animation: arrowSlideBack 0.5s ease-in-out;
+}
+.showTechs{
+  display: flex;
+  animation : showTechs 1.5s ease-in-out;
+}
+.hideTechs{
+  display: none;
+  animation : hideTechs 0.2s ease-in-out;
+}
+
+@keyframes showTechs {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: flex;
+    opacity: 1;
+  }
+}
+@keyframes hideTechs {
+  from {
+    display: flex;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+
+@keyframes arrowSlideBack {
+  from {
+    margin-left: 200px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+
+@keyframes arrowSlide {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 200px;
+  }
+}
 
 @keyframes width-transition {
   from {
     width: 150px;
+    height: 4vh;
+    
   }
   to {
     width: 100%;
+    height: 200px;
   }
 }
 @keyframes width-close {
   from {
     width: 100%;
+    height: 200px;
   }
   to {
+    height: 4vh;
     width: 150px;
   }
 }
+

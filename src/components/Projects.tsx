@@ -1,6 +1,6 @@
 import Project from "./Project";
 import TitleView from "./TitleView";
-import { FirstProjectTechnos } from "../data/Technos";
+import { FirstProjectTechnos, secondProjectTechnos } from "../data/Technos";
 
 function Projects() {
   return (
@@ -20,10 +20,12 @@ function Projects() {
           liveLink="https://foot-wear-one.vercel.app/"
         />
         <Project
-          TechnologiesUsed={FirstProjectTechnos}
-          ProjectName="FootWear"
-          date="February 2024 - April 2024"
-          description="FootWear is a full-stack e-commerce website where users can buy shoes."
+          TechnologiesUsed={secondProjectTechnos}
+          ProjectName="OneSchool"
+          date="January 2024 - May 2024"
+          description="OneSchool is a Landing page for an online school."
+          githubLink="https://github.com/MohamedSaberChkiri/OneSchool"
+          liveLink="https://landing-page-gilt-three-17.vercel.app"
         />
         <Project
           TechnologiesUsed={FirstProjectTechnos}

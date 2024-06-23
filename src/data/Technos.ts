@@ -1,13 +1,14 @@
 import { IconType } from "react-icons";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaReact, FaNodeJs, FaStripeS } from "react-icons/fa";
-import { IoLogoVercel } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   SiNextdotjs,
   SiTypescript,
   SiShadcnui,
   SiExpress,
+  SiVite,
 } from "react-icons/si";
 
 export interface Technos {
@@ -52,6 +53,25 @@ export const FirstProjectTechnos: Technos[] = [
     name: "Stripe Gateway",
     icon: FaStripeS,
   },
+  {
+    name: "Vercel",
+    icon: IoLogoVercel,
+  },
+];
+export const secondProjectTechnos: Technos[] = [
+  {
+    name: "React.js",
+    icon: FaReact,
+  },
+  {
+    name: "JavaScript",
+    icon: IoLogoJavascript,
+  },
+  {
+    name: "Vite",
+    icon: SiVite,
+  },
+
   {
     name: "Vercel",
     icon: IoLogoVercel,

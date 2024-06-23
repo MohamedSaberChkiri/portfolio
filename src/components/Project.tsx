@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { Technos } from "../data/Technos";
 import Technologies from "./Technologies";
 import { IoLogoVercel } from "react-icons/io5";
-import { IoIosArrowDown } from "react-icons/io";
+import ProjectTechView from "./ProjectTechView";
 
 function Project(props: {
   TechnologiesUsed: Array<Technos>;
@@ -21,12 +21,7 @@ function Project(props: {
         <p className="w-full text-white mb-6 opacity-50 text-sm">
           {props.date}
         </p>
-        <button className="text-white border px-2 py-1 rounded-2xl flex items-center justify-start gap-4">
-          <span className="text-[13px]">TECHNOLOGIES</span>
-          <span>
-            <IoIosArrowDown />
-          </span>
-        </button>
+     <ProjectTechView />
         <p className="mt-[3vh] text-[15px] text-white">{props.description}</p>
         <div className="mt-[2vh] flex items-center justify-around w-full">
           <button className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2">

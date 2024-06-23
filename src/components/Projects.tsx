@@ -16,6 +16,8 @@ function Projects() {
           ProjectName="FootWear"
           date="February 2024 - April 2024"
           description="FootWear is a full-stack e-commerce website where users can buy shoes."
+          githubLink="https://github.com/MohamedSaberChkiri/FootWear"
+          liveLink="https://foot-wear-one.vercel.app/"
         />
         <Project
           TechnologiesUsed={FirstProjectTechnos}

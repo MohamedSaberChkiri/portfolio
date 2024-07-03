@@ -15,7 +15,7 @@ function ProjectTechView(props: { techs: Array<Technos> }) {
     <div className="w-full">
       <button
         onClick={handleIsClicked}
-        className={` text-white border  p-2 rounded-2xl flex items-start flex-col gap-4 ${
+        className={` text-white border px-2 py-1 rounded-2xl flex items-start flex-col gap-4 ${
           isClicked ? "transition-width " : "transition-close"
         }`}
       >

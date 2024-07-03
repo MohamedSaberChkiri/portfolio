@@ -12,10 +12,10 @@ import TitleView from "./TitleView";
 
 function Skills() {
   return (
-    <div className="flex items-center gap-16 justify-center flex-col w-full  mt-[40vh] ">
+    <div className="flex items-center gap-24 justify-center flex-col w-full  mt-[40vh] ">
       <TitleView title="Skills" />
 
-      <div className="flex items-center justify-center gap-[15vw] flex-wrap">
+      <div className="flex items-center justify-center gap-[10vh] flex-wrap ">
         <CircularProgressBar
           skills={Languages}
           openTag="<Languages>"
@@ -29,7 +29,7 @@ function Skills() {
         />
       </div>
 
-      <div className="flex items-center justify-center gap-[15vw] flex-wrap">
+      <div className="flex items-center justify-center gap-[10vh] flex-wrap">
         <CircularProgressBar
           skills={FrameWorks}
           openTag="<Frameworks>"
@@ -42,7 +42,7 @@ function Skills() {
         />
       </div>
 
-      <div className="flex items-center justify-center gap-32 flex-wrap">
+      <div className="flex items-center justify-center gap-[10vh] flex-wrap">
         <CircularProgressBar
           skills={PackageManagers}
           openTag="<PkgManagers>"

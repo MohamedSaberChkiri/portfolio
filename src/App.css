@@ -37,6 +37,10 @@ body {
   background: rgba(219, 102, 35, 0.8);
 }
 
+.heartBeat {
+  animation: heartBeat 2s infinite;
+}
+
 @keyframes blink-cursor {
   from,
   to {
@@ -45,4 +49,20 @@ body {
   50% {
     border-color: var(--orange-color);
   }
+}
+
+
+
+@keyframes heartBeat {
+  
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+
 }

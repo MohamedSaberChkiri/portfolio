@@ -9,10 +9,21 @@ import HomeRightSocials from "./components/HomeRightSocials";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { motion, useScroll } from "framer-motion";
 
 function App() {
+  
+  const {scrollYProgress} = useScroll()
+
+
   return (
     <>
+    <motion.div
+    style={{width: "100%", height: "5px", backgroundColor: "var(--orange-color)", transformOrigin : '0 0', scaleX: scrollYProgress}}
+    className="fixed top-0 z-[9999] rounded-[10px]"
+    >
+      
+    </motion.div>
       <div className="fixed bottom-[10vh] z-[9999] right-[5vw] md:right-[3vw]">
         <HomeRightSocials />
       </div>

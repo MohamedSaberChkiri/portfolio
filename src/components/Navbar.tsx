@@ -40,7 +40,7 @@ function Navbar() {
         {"<Mohamed/>"}
       </Link>
 
-      <ul className="hidden md:flex items-center justify-around gap-10 text-sm w-[350px]">
+      <ul className="hidden md:flex items-center justify-around gap-10 text-sm max-w-[360px]">
         <Link
           to="about"
           smooth={true}
@@ -81,7 +81,7 @@ function Navbar() {
       <div className="flex items-center justify-center gap-4">
         <CustomizedSwitch />
 
-        <Link to="contact" smooth={true} duration={500} offset={-110}>
+        <Link to="contact" smooth={true} duration={500} offset={-110} className="hidden md:flex">
           <button className="btn">{"<Get in Touch/>"}</button>
         </Link>
         <div className="flex md:hidden">

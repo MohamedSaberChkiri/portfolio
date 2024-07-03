@@ -69,6 +69,17 @@ const Drawer = () => {
             >
               <span className=" duration-200 hover:scale-125 ">Projects</span>{" "}
             </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="flex items-center justify-center"
+              offset={-100}
+              onClick={toggleDrawer}
+            >
+              <span className=" duration-200 hover:scale-125 ">Contact Me</span>{" "}
+            </Link>
+       
           </div>
         </div>
       </div>

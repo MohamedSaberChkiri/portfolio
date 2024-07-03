@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { Technos } from "../data/Technos";
 import { IoLogoVercel } from "react-icons/io5";
 import ProjectTechView from "./ProjectTechView";
+import { Link } from "react-scroll";
 
 function Project(props: {
   TechnologiesUsed: Array<Technos>;
@@ -11,6 +12,7 @@ function Project(props: {
   description: string;
   githubLink?: string;
   liveLink?: string;
+  portfolioLink?: boolean;
 }) {
   return (
     <div className=" w-[270px] sm:w-[400px] relative project-hover rounded-2xl">
@@ -25,13 +27,20 @@ function Project(props: {
 
         <p className="mt-[3vh] text-[15px] text-white">{props.description}</p>
         <div className="mt-[2vh] flex items-center justify-around w-full">
+         { props.portfolioLink ? 
+        <Link className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2" to="home" smooth={true} duration={500}>
+                    <IoLogoVercel /> <span className="hidden sm:flex">View</span>Live
+
+        </Link>
+         
+         : 
           <a
-            href={props.liveLink}
-            target="_blank"
-            className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2"
-          >
-            <IoLogoVercel /> <span className="hidden sm:flex">View</span>Live
-          </a>
+          href={props.liveLink}
+          target="_blank"
+          className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2"
+        >
+          <IoLogoVercel /> <span className="hidden sm:flex">View</span>Live
+        </a>}
           <a
             target="_blank"
             href={props.githubLink}

@@ -1,10 +1,11 @@
+import { Link } from "react-scroll";
 import TitleView from "./TitleView";
 
 function AboutMe() {
   return (
     <div className="flex-col gap-[3vh] text-[color:var(--white-color)] my-[50px] max-w-[700px] mx-auto px-2">
       <TitleView title="About Me" />
-      <span className="text-[color:var(--orange-color)] ml-[3vw] flex mt-[15vh]">
+      <span className="text-[color:var(--orange-color)] ml-[3vw] flex mb-2 mt-[15vh]">
         {"<About>"}
       </span>
       <div className="ml-[5vw] flex flex-col gap-6">
@@ -27,19 +28,20 @@ function AboutMe() {
         </p>
         <p>
           Let's connect and build something amazing together! Reach out to me at
-          <span className="text-[color:var(--orange-color)] mx-2">
-            mohamed@saber.dev
-          </span>
+          <Link to="contact" smooth duration={500} className="text-[color:var(--orange-color)] mx-2">
+            contact@mohamedsaberchkiri.tech
+          </Link>
           or find me on
           <a
             href="https://www.linkedin.com/in/saberchkiri"
+            target="_blank" 
             className="text-[color:var(--orange-color)] mx-2"
           >
             LinkedIn
           </a>
         </p>
       </div>
-      <span className="text-[color:var(--orange-color)] float-end">
+      <span className="text-[color:var(--orange-color)] mt-2 float-end">
         {"</About>"}
       </span>
     </div>

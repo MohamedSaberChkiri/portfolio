@@ -77,3 +77,22 @@ export const secondProjectTechnos: Technos[] = [
     icon: IoLogoVercel,
   },
 ];
+
+export const portfolioTechnos: Technos[] = [
+  {
+    name: "React.js",
+    icon: FaReact,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: RiTailwindCssFill,
+  },
+  {
+    name: "Vercel",
+    icon: IoLogoVercel,
+  },
+];

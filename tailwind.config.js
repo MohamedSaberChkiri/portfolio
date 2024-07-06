@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         anonymousPro: ["Averia Serif Libre", "serif"],
         anton: ["Anton", "sans-serif"],
+        myName: ["Hachi Maru Pop", "cursive"],
       },
       transitionProperty: {
         transform: "transform",

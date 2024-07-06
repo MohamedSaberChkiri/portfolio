@@ -3,7 +3,7 @@ import TextSwap from "./HomeTextSwap";
 function HomeLeft() {
   return (
     <div className="flex flex-col items-start gap-6 justify-center h-[70vh]">
-      <div className="text-[color:var(--white-color)] text-4xl sm:text-5xl cursor-none">
+      <div className="text-[color:var(--white-color)] font-myName text-4xl sm:text-5xl cursor-none">
         MOHAMED SABER CHKIRI
       </div>
       <h1 className="text-2xl sm:text-3xl text-[color:var(--white-color)] gap-4 flex">

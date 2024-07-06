@@ -25,11 +25,18 @@ body {
   animation: blink-cursor 0.75s step-end infinite;
 }
 
+.navbar-scrolled {
+  background-color: transparent;
+  box-shadow: none;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
+    height 0.5s ease-in-out;
+
+  height: 10vh;
+}
+
 .navbar-scrolled.scrolled {
   background-color: var(--black-color);
   box-shadow: 0 0 1px var(--white-color);
-  transition: 0.5s ease-in-out;
-
   height: 7vh;
 }
 
@@ -51,10 +58,7 @@ body {
   }
 }
 
-
-
 @keyframes heartBeat {
-  
   from {
     transform: scale(1);
   }
@@ -64,5 +68,4 @@ body {
   100% {
     transform: scale(1);
   }
-
 }

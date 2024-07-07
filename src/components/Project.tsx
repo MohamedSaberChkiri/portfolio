@@ -1,53 +1,27 @@
-import { FaGithub } from "react-icons/fa";
-
-import { Technos } from "../data/Technos";
-import { IoLogoVercel } from "react-icons/io5";
-import ProjectTechView from "./ProjectTechView";
-import { Link } from "react-scroll";
-
-function Project(props: {
-  TechnologiesUsed: Array<Technos>;
-  ProjectName: string;
-  date: string;
-  description: string;
-  githubLink?: string;
-  liveLink?: string;
-  portfolioLink?: boolean;
-}) {
+function Project() {
   return (
-    <div className=" w-[270px] sm:w-[400px] relative project-hover rounded-2xl">
-      <div className="w-full flex items-start justify-start flex-wrap h-fit  project-card px-4 py-8 rounded-2xl">
-        <p className=" w-full  text-white text-4xl font-bold">
-          {props.ProjectName}
-        </p>
-        <p className="w-full text-white mb-6 opacity-50 text-sm">
-          {props.date}
-        </p>
-        <ProjectTechView techs={props.TechnologiesUsed}/>
+    <div className="w-[90%] xl:w-[50%] lg:w-[70%] md:w-[80%] sm:w-[90%] bg-[#f6ecff] py-10 relative rounded-3xl shadow-2xl mt-12">
+      <div className="hidden md:flex md:absolute md:top-[10%] md:left-[-50px] md:h-[250px] md:w-[250px] shadow-2xl rounded-3xl"></div>
 
-        <p className="mt-[3vh] text-[15px] text-white">{props.description}</p>
-        <div className="mt-[2vh] flex items-center justify-around w-full">
-         { props.portfolioLink ? 
-        <Link className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2" to="home" smooth={true} duration={500}>
-                    <IoLogoVercel /> <span className="hidden sm:flex">View</span>Live
-
-        </Link>
-         
-         : 
-          <a
-          href={props.liveLink}
-          target="_blank"
-          className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2"
-        >
-          <IoLogoVercel /> <span className="hidden sm:flex">View</span>Live
-        </a>}
-          <a
-            target="_blank"
-            href={props.githubLink}
-            className="border font-bold text-white border-white px-4 rounded-2xl flex items-center justify-around gap-2"
-          >
-            <FaGithub /> <span className="hidden sm:flex">View</span>Repo
-          </a>
+      <div className="flex flex-col gap-4 items-start justify-around ml-0 md:ml-[30%] px-4 h-full py-4">
+        <p className="text-[color:var(--white-color)] opacity-50">
+          Febrary 2024 - Juni 2024
+        </p>
+        <p className="text-4xl font-bold text-[color:var(--orange-color)]">
+          FootWear
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          provident sit recusandae neque, voluptas quam quisquam perspiciatis
+        </p>
+        <div className="w-[60%] flex items-center justify-start gap-4">
+          <button className="btn border px-10 py-2 flex items-center justify-center rounded-[50px] cursor-none">
+            <span className="flex lg:hidden">Live</span>
+            <span className="hidden lg:flex">Live View</span>
+          </button>
+          <button className="bg-[color:var(--orange-color)] text-white border px-10 py-2 rounded-[50px] cursor-none">
+            Github
+          </button>
         </div>
       </div>
     </div>

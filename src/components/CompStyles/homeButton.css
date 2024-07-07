@@ -94,7 +94,9 @@
   transition: all 0.3s;
   z-index: -1;
 }
-
+.btn:hover {
+  color: var(--black-color);
+}
 .btn:hover::before {
   transform: translateX(0);
 }

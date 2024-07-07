@@ -15,7 +15,7 @@ function App() {
   const { scrollYProgress } = useScroll();
 
   return (
-    <>
+    <div className="font-anonymousPro">
       <motion.div
         style={{
           width: "100%",
@@ -51,7 +51,7 @@ function App() {
         <Contact />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -18,6 +18,7 @@ function Projects() {
             liveLink="https://foot-wear-one.vercel.app/"
             githubLink="https://github.com/MohamedSaberChkiri/FootWear"
             date="February 2024 - july 2024"
+            description="Developed a dynamic e-commerce platform for footwear, featuring seamless user authentication, secure payment processing, and a responsive design for an optimal shopping experience."
           />
           <Project />
           <Project
@@ -26,6 +27,7 @@ function Projects() {
             liveLink="https://landing-page-gilt-three-17.vercel.app/"
             githubLink="https://github.com/MohamedSaberChkiri/OneSchool"
             date="January 2024 - july 2024"
+            description="Created a visually appealing and user-friendly landing page for an online school, highlighting key features, course offerings, and student testimonials to attract prospective learners"
           />
           <span className="text-[color:var(--orange-color)] flex justify-end w-[50%]">
             {"</Projects>"}

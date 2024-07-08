@@ -12,7 +12,7 @@ function Project(props: {
         <img
           src={props.imageLink}
           alt="project Image"
-          className="rounded-2xl"
+          className="rounded-2xl object-center"
         />
       </div>
 
@@ -26,7 +26,7 @@ function Project(props: {
             "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit provident sit recusandae neque, voluptas quam quisquam perspiciatis"}
         </p>
         <div className="w-[60%] flex items-center justify-start gap-4">
-          <button className="btn border px-10 py-2 flex items-center justify-center rounded-[50px] cursor-none">
+          <button className="border-[color:var(--orange-color)] hover:bg-[color:var(--orange-color)] hover:text-white border px-10 py-2 flex items-center justify-center rounded-[50px] cursor-none">
             <a
               href={props.liveLink}
               target="_blank"

@@ -10,14 +10,14 @@ function AboutMe() {
       </span>
       <div className="ml-[5vw] flex flex-col gap-6">
         <p>
-          I'm a Self-taught Web Developer based in Lübeck, Germany. and current
+          I'm a Self-taught Web Developer based in Lübeck, Germany. And current
           Bachelor's student in Computer Science at Technische Hochschule
           Lübeck. My journey into web development began with curiosity and has
           grown into a full-fledged passion.
         </p>
         <p>
           I've mastered HTML, CSS, and JavaScript, and I'm eagerly exploring
-          advanced frameworks like React and Node.js. I thrive on transforming
+          advanced frameworks like React and NEXT. I thrive on transforming
           concepts into sleek, user-friendly websites and am always hungry for
           new challenges and learning opportunities.
         </p>
@@ -28,13 +28,18 @@ function AboutMe() {
         </p>
         <p>
           Let's connect and build something amazing together! Reach out to me at
-          <Link to="contact" smooth duration={500} className="text-[color:var(--orange-color)] mx-2">
+          <Link
+            to="contact"
+            smooth
+            duration={500}
+            className="text-[color:var(--orange-color)] mx-2"
+          >
             contact@mohamedsaberchkiri.tech
           </Link>
           or find me on
           <a
             href="https://www.linkedin.com/in/saberchkiri"
-            target="_blank" 
+            target="_blank"
             className="text-[color:var(--orange-color)] mx-2"
           >
             LinkedIn

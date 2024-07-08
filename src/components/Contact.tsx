@@ -70,7 +70,7 @@ function Contact() {
       <form
         ref={formRef}
         onSubmit={onSubmit}
-        className="flex flex-col my-[3vh]"
+        className="flex flex-col my-[3vh] "
       >
         <input
           type="hidden"
@@ -78,41 +78,43 @@ function Contact() {
           value="100287e9-f48d-4eb1-8e54-ae3c6b1f3fee"
         />
         <input
-          className="bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
+          className="bg-transparent w-full sm:w-[500px] border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           type="text"
           name="name"
           placeholder="Name"
           required
         ></input>
         <input
-          className="bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
+          className="bg-transparent w-full sm:w-[500px] border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           type="email"
           name="email"
           placeholder="Email"
           required
         ></input>
         <input
-          className="bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
+          className="bg-transparent w-full sm:w-[500px] border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           type="text"
           name="subject"
           placeholder="Subject"
           required
         ></input>
         <textarea
-          className="w-[250px] sm:w-[500px] h-[200px] bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
+          className="w-full sm:w-[500px] h-[200px] bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           name="message"
           placeholder="Message"
         ></textarea>
 
-        <HCaptcha
-          sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
-          reCaptchaCompat={false}
-          onVerify={onHCaptchaChange}
-        />
+        <div className="w-full flex items-center justify-center my-2">
+          <HCaptcha
+            sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+            reCaptchaCompat={false}
+            onVerify={onHCaptchaChange}
+          />
+        </div>
 
         <button
           type="submit"
-          className="bg-[color:var(--orange-color)] flex items-center justify-center cursor-none h-[5vh] px-4 rounded-lg mt-2"
+          className="bg-[color:var(--orange-color)] w-full sm:w-[500px] flex items-center justify-center cursor-none h-[5vh] px-4 rounded-lg "
         >
           {ButtonValue}
         </button>

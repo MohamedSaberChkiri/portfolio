@@ -15,7 +15,7 @@ function App() {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="font-anonymousPro">
+    <div className="font-anonymousPro duration-500">
       <motion.div
         style={{
           width: "100%",

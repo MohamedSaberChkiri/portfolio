@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   APIs,
   Databases,
@@ -11,6 +12,7 @@ import CircularProgressBar from "./CircleSkill";
 import TitleView from "./TitleView";
 
 function Skills() {
+  const { t } = useTranslation();
   return (
     <div className="flex items-center gap-24 justify-center flex-col w-full  mt-[40vh] ">
       <TitleView title="Skills" />
@@ -18,14 +20,14 @@ function Skills() {
       <div className="flex items-center justify-center gap-[10vh] flex-wrap ">
         <CircularProgressBar
           skills={Languages}
-          openTag="<Languages>"
-          closeTag="</Languages>"
+          openTag={`<${t("languages")}>`}
+          closeTag={`</${t("languages")}>`}
         />
 
         <CircularProgressBar
           skills={Databases}
-          openTag="<Databases>"
-          closeTag="</Databases>"
+          openTag={`<${t("databases")}>`}
+          closeTag={`</${t("databases")}>`}
         />
       </div>
 

@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import TextSwap from "./HomeTextSwap";
 
 function HomeLeft() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col items-start gap-6 justify-center h-[70vh]">
       <div className="text-[color:var(--white-color)] font-myName text-4xl sm:text-5xl cursor-none">
@@ -10,15 +12,13 @@ function HomeLeft() {
         I'm a <TextSwap />
       </h1>
       <p className="text-[color:var(--white-color)] max-w-[600px] ">
-        {
-          "I'm a web developer who loves making the web a more awesome place. I write code that works, most of the time, and designs that always impress. Explore my portfolio and let's create something incredible together!"
-        }
+        {t("Home_Text")}
       </p>
       <button
         className="button-86 text-[color:var(--black-color)]"
         role="button"
       >
-        Download CV
+        {t("CV_button")}
       </button>
     </div>
   );

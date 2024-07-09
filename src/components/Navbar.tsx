@@ -2,9 +2,18 @@ import { Link } from "react-scroll";
 import CustomizedSwitch from "./DarkLightSwitch";
 import { useState, useEffect } from "react";
 import Drawer from "./NavDrawer";
+import { useTranslation } from "react-i18next";
+import germany from "../assets/images/germany.png";
+import unitedStates from "../assets/images/united-states.png";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [LanguageIcon, setLanguageIcon] = useState(true);
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng: string) => {
+    setLanguageIcon(!LanguageIcon);
+    i18n.changeLanguage(lng);
+  };
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY || window.pageYOffset;
@@ -44,7 +53,9 @@ function Navbar() {
           offset={-100}
         >
           <span>{"<"}</span>{" "}
-          <span className="hover:text-lg duration-200  hover:px-2">About</span>{" "}
+          <span className="hover:text-lg duration-200  hover:px-2">
+            {t("about_Button")}
+          </span>{" "}
           <span>{"/>"}</span>
         </Link>
         <Link
@@ -67,7 +78,7 @@ function Navbar() {
         >
           <span>{"<"}</span>{" "}
           <span className="hover:text-lg duration-200  hover:px-2">
-            Projects
+            {t("Projects_Button")}
           </span>{" "}
           <span>{"/>"}</span>
         </Link>
@@ -83,8 +94,25 @@ function Navbar() {
           offset={-110}
           className="hidden md:flex"
         >
-          <button className="btn">{"<Get in Touch/>"}</button>
+          <button className="btn">{`</${t("Contact_Button")}>`}</button>
         </Link>
+        <div>
+          {LanguageIcon ? (
+            <img
+              src={germany}
+              alt=""
+              onClick={() => changeLanguage("de")}
+              className="w-[25px] h-[20px] cursor-pointer"
+            />
+          ) : (
+            <img
+              src={unitedStates}
+              alt=""
+              onClick={() => changeLanguage("en")}
+              className="w-[25px] h-[20px] cursor-pointer"
+            />
+          )}
+        </div>
         <div className="flex md:hidden">
           <Drawer />
         </div>

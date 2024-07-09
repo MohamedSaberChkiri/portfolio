@@ -2,6 +2,7 @@ import { ReactNode, useRef, useState } from "react";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import TitleView from "./TitleView";
 import BouncingDotsLoader from "./BouncingDotsLoader";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
   const [ButtonValue, setButtonValue] = useState<ReactNode>(
@@ -59,12 +60,12 @@ function Contact() {
       setButtonValue(<BouncingDotsLoader default />);
     }
   };
-
+  const { t } = useTranslation();
   return (
     <div className="w-fit mx-auto">
-      <TitleView title="Contact" />
+      <TitleView title={t("contact_tag")} />
       <span className="text-[color:var(--orange-color)] flex mt-[10vh]">
-        {"<Contact>"}
+        {`<${t("contact_tag")}>`}
       </span>
 
       <form
@@ -95,13 +96,13 @@ function Contact() {
           className="bg-transparent w-full sm:w-[500px] border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           type="text"
           name="subject"
-          placeholder="Subject"
+          placeholder={t("contact_subject")}
           required
         ></input>
         <textarea
           className="w-full sm:w-[500px] h-[200px] bg-transparent border-[color:var(--orange-color)] border-2 rounded-lg py-2 px-4 mt-2 outline-none text-[color:var(--white-color)]"
           name="message"
-          placeholder="Message"
+          placeholder={t("contact_message")}
         ></textarea>
 
         <div className="w-full flex items-center justify-center my-2">
@@ -120,7 +121,7 @@ function Contact() {
         </button>
       </form>
       <span className="text-[color:var(--orange-color)] flex w-full items-center justify-end">
-        {"</Contact>"}
+        {`</${t("contact_tag")}>`}
       </span>
     </div>
   );

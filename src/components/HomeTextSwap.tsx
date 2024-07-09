@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const TextSwap = () => {
   const [text, setText] = useState("");
@@ -6,8 +7,8 @@ const TextSwap = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
-
-  const phrases = ["Web Developer", "Student", "Chess Player"];
+  const { t } = useTranslation();
+  const phrases = [t("home_1"), t("home_2"), t("home_3")];
 
   useEffect(() => {
     const handleType = () => {

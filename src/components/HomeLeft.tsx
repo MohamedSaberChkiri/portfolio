@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import TextSwap from "./HomeTextSwap";
+import cv from "../assets/files/cv.pdf";
 
 function HomeLeft() {
   const { t } = useTranslation();
@@ -9,12 +10,13 @@ function HomeLeft() {
         MOHAMED SABER CHKIRI
       </div>
       <h1 className="text-2xl sm:text-3xl text-[color:var(--white-color)] gap-4 flex">
-        I'm a <TextSwap />
+        {t("Changing_Portion")} <TextSwap />
       </h1>
       <p className="text-[color:var(--white-color)] max-w-[600px] ">
         {t("Home_Text")}
       </p>
       <button
+        onClick={() => window.open(cv, "_blank")}
         className="button-86 text-[color:var(--black-color)]"
         role="button"
       >

@@ -2,6 +2,7 @@
   "about_Button": "About me",
   "Projects_Button": "Projects",
   "Contact_Button": "Get in touch",
+  "Changing_Portion": "I'm a",
   "Home_Text": "I'm a web developer who loves making the web a more awesome place. I write code that works, most of the time, and designs that always impress. Explore my portfolio and let's create something incredible together!",
   "CV_button": "View CV",
   "contact_tag": "Contact",
@@ -23,5 +24,8 @@
   "contact_send": "Send Message",
   "built_by": "built with",
   "built_by_2": "by",
-  "no_ads": "No ads, no tracking. Enjoy your day!"
+  "no_ads": "No ads, no tracking. Enjoy your day!",
+  "home_1": "Web Developer",
+  "home_3": "Chess Player",
+  "home_2": "Student"
 }

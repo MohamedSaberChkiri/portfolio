@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { IoMdClose } from "react-icons/io";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,6 +11,7 @@ const Drawer = () => {
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+  const { t } = useTranslation();
 
   return (
     <>
@@ -47,7 +49,9 @@ const Drawer = () => {
               offset={-100}
               onClick={toggleDrawer}
             >
-              <span className=" duration-200   hover:scale-125">About</span>{" "}
+              <span className=" duration-200   hover:scale-125">
+                {t("about_Button")}
+              </span>{" "}
             </Link>
             <Link
               to="skills"
@@ -67,7 +71,9 @@ const Drawer = () => {
               offset={-100}
               onClick={toggleDrawer}
             >
-              <span className=" duration-200 hover:scale-125 ">Projects</span>{" "}
+              <span className=" duration-200 hover:scale-125 ">
+                {t("Projects_Button")}
+              </span>{" "}
             </Link>
             <Link
               to="contact"
@@ -77,9 +83,11 @@ const Drawer = () => {
               offset={-100}
               onClick={toggleDrawer}
             >
-              <span className=" duration-200 hover:scale-125 ">Contact Me</span>{" "}
+              <span className=" duration-200 hover:scale-125 ">
+                {" "}
+                {t("Contact_Button")}{" "}
+              </span>{" "}
             </Link>
-       
           </div>
         </div>
       </div>

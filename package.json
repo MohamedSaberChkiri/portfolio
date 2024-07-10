@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.10.1",
+    "@vercel/speed-insights": "^1.0.12",
     "framer-motion": "^11.2.12",
     "i18next": "^23.11.5",
     "react": "^18.2.0",

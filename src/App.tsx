@@ -10,12 +10,14 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { motion, useScroll } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const { scrollYProgress } = useScroll();
 
   return (
     <div className="font-anonymousPro duration-500">
+      <SpeedInsights />
       <motion.div
         style={{
           width: "100%",

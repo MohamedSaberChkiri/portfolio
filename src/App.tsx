@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { motion, useScroll } from "framer-motion";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="font-anonymousPro duration-500">
       <SpeedInsights />
+      <Analytics />
       <motion.div
         style={{
           width: "100%",

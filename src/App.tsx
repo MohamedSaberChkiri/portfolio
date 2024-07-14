@@ -12,12 +12,23 @@ import Skills from "./components/Skills";
 import { motion, useScroll } from "framer-motion";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
+import { Helmet } from "react-helmet";
 
 function App() {
   const { scrollYProgress } = useScroll();
 
   return (
     <div className="font-anonymousPro duration-500">
+      <Helmet>
+        <title>Portfolio | Mohamed Saber Chkiri</title>
+        <meta name="description" content="Mohamed's Portfolio" />
+        <meta
+          name="keywords"
+          content="Mohamed Saber Chkiri, Portfolio, Web Developer, Frontend Developer, Fullstack Developer, React Developer, Next.js Developer, Tailwind Developer, TypeScript Developer, JavaScript Developer, HTML Developer, CSS Developer, SASS Developer, SCSS Developer, Web Designer, UI/UX Designer, Germany, lübeck, Remote"
+        />
+        <meta name="author" content="Mohamed Saber Chkiri" />
+      </Helmet>
+
       <SpeedInsights />
       <Analytics />
       <motion.div

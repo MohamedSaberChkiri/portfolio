@@ -1,3 +1,5 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import React from "react";
 import { Link } from "react-scroll";
 
 function Project(props: {
@@ -9,8 +11,18 @@ function Project(props: {
   imageLink: string;
   portofolio?: boolean;
 }) {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.22 1"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
-    <div className="w-[90%] xl:w-[50%] lg:w-[70%] md:w-[80%] sm:w-[90%] bg-[#f6ecff] py-10 relative rounded-3xl shadow-2xl mt-12 duration-500">
+    <motion.div
+      style={{ scale: scale }}
+      ref={ref}
+      className="w-[90%] xl:w-[50%] lg:w-[70%] md:w-[80%] sm:w-[90%] bg-[#f6ecff] py-10 relative rounded-3xl shadow-2xl mt-12 duration-500"
+    >
       <div className="hidden md:flex md:absolute  md:top-[10%] md:left-[-150px] md:h-[250px] md:w-[350px] shadow-2xl rounded-3xl">
         <img
           src={props.imageLink}
@@ -76,7 +88,7 @@ function Project(props: {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

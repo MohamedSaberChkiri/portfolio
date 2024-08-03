@@ -53,7 +53,7 @@ export const Languages: Skill[] = [
   },
   {
     name: "Php",
-    level: 45,
+    level: 70,
     icon: FaPhp,
   },
 ];
@@ -71,7 +71,7 @@ export const FrameWorks: Skill[] = [
   },
   {
     name: "Vue.js",
-    level: 30,
+    level: 55,
     icon: FaVuejs,
   },
   {
@@ -89,7 +89,7 @@ export const FrameWorks: Skill[] = [
 export const Databases: Skill[] = [
   {
     name: "MongoDB",
-    level: 96,
+    level: 90,
     icon: BiLogoMongodb,
   },
   {
